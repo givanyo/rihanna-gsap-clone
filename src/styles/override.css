@@ -1,0 +1,5 @@
+.end {
+    gap: 16px;
+    color: var(--white-darker);
+    padding-block: 16px;
+}

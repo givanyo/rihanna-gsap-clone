@@ -1,0 +1,27 @@
+:root {
+    --bg-gradient:  linear-gradient(to bottom right, hsl(56, 45%, 95%), hsl(56, 47.5%, 95%),hsl(56, 50%, 95%));
+    --black: #0f0f0e;
+    --white: hsl(55, 65%, 97%);
+    --white-darker: hsl(55, 5%, 60%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
