@@ -1,17 +1,18 @@
+
+
 .hero {
     background-image: url(../assets/R8Photo-1240x930.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    min-height: 100vh;
+    background-attachment: fixed;
+    height: 100vh;
     position: relative;
+    width: 100%;
 
 }
 
-.diagonal {
-    position: absolute;
-    bottom: 0;
-}
+
 
 .divider {
     background-color: #ccc;
@@ -19,4 +20,9 @@
     height: 1px;
     position: absolute;
     bottom: 4px;
+}
+
+.diagonal {
+    position: absolute;
+    bottom: 0;
 }
