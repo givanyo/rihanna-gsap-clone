@@ -28,13 +28,17 @@ gsap.to('.appear', {
 });
 
 contentSections.forEach((section) => {
+    const overlapUp = section.querySelector('#overlap-up');
+
     const leftChildren = section.querySelectorAll('.left');
-    const rightChildren = section.querySelectorAll('.right');
+    const rightChildren = section.querySelectorAll('.right');    
     const upChildren = section.querySelector('.up');
     const downChildren = section.querySelector('.down');
+
     const fullImgPos = section.querySelector('.full-img.position');
     const fullImgScale = section.querySelector('.full-img.scale');
     const textLg = section.querySelector('.text-lg');
+
     gsap.set(fullImgScale, {
         backgroundSize: '140%',
 
@@ -96,7 +100,7 @@ contentSections.forEach((section) => {
             end: '60% center',
         }
     });
-    gsap.from(upChildren, {
+    gsap.from(overlapUp, {
         y: "-80dvh",
         ease: 'power1.inOut',
         scrollTrigger: {
@@ -113,10 +117,21 @@ contentSections.forEach((section) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            start: "6% center",
-            end: '60% center'
+            start: 'top 100%',
+            end: 'top 30%'
         }
-    })
+    });
+    gsap.from(upChildren, {
+        y: "-80dvh",
+        ease: 'power1.inOut',
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: 'top 120%',
+            end: 'top 30%',
+
+        }
+    });
 });
 
 
