@@ -12,6 +12,16 @@ gsap.set('.left', {
 gsap.set('.right', {
     x: '80vw',
 })
+
+gsap.set('.appear', {
+    opacity: 0,
+});
+
+gsap.to('.appear', {
+    opacity: 1,
+    duration: 0.75,
+});
+
 contentSections.forEach((section) => {
     const leftChildren = section.querySelectorAll('.left');
     const rightChildren = section.querySelectorAll('.right');
