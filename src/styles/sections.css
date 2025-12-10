@@ -3,6 +3,7 @@
     height: 88dvh;
     padding: 0;
     position: relative;
+    overflow: hidden;
 }
 .content img {
     height: 100%;

@@ -31,6 +31,7 @@ contentSections.forEach((section) => {
     const leftChildren = section.querySelectorAll('.left');
     const rightChildren = section.querySelectorAll('.right');
     const upChildren = section.querySelector('.up');
+    const downChildren = section.querySelector('.down');
     const fullImgPos = section.querySelector('.full-img.position');
     const fullImgScale = section.querySelector('.full-img.scale');
     const textLg = section.querySelector('.text-lg');
@@ -105,6 +106,17 @@ contentSections.forEach((section) => {
             end: '60% center'
         }
     });
+
+    gsap.from(downChildren, {
+        y: "80dvh",
+        ease: 'power1.inOut',
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: "6% center",
+            end: '60% center'
+        }
+    })
 });
 
 

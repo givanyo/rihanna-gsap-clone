@@ -42,6 +42,6 @@ p.larger {
     padding-bottom: 20dvh;
 }
 
-.text.left p {
+.text p.align-left  {
     text-align: left;
 }
