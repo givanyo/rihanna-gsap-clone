@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    height: 88dvh;
+    padding: 0;
+    position: relative;
+}
+.content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    background-color: blue;
+    display: block;
+    
+}
+
+
+.left {
+    left: 0;
+    margin-left: 4px;
+}
+
+.right {
+    right: 0;
+    margin-right: 4px;
+}
+.img-text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    gap: 24px;
+    padding-inline: 96px;
+    text-align: justify;
+    font-size: 26px;
+    justify-content: center;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}

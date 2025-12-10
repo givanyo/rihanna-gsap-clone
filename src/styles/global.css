@@ -3,6 +3,7 @@
     --black: #0f0f0e;
     --white: hsl(55, 65%, 97%);
     --white-darker: hsl(55, 5%, 60%);
+    --text-color: hsl(0, 0%, 36%);
 }
 * {
     margin: 0;
@@ -15,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 600vh;
+    min-height: 200vh;
     overflow-x: hidden;
 }
 
@@ -26,4 +27,8 @@ ul {
 svg {
     width: 16px;
     height: 16px;
+}
+
+section {
+    margin-left: 96px;
 }
