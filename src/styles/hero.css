@@ -1,0 +1,22 @@
+.hero {
+    background-image: url(../assets/R8Photo-1240x930.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.diagonal {
+    position: absolute;
+    bottom: 0;
+}
+
+.divider {
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 4px;
+}
