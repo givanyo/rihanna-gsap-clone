@@ -36,7 +36,12 @@ p.larger {
     width: 50%;
 }
 
+
 .self-align-end {
     align-self: flex-end;
     padding-bottom: 20dvh;
+}
+
+.text.left p {
+    text-align: left;
 }

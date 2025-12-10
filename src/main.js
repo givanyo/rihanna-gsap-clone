@@ -93,7 +93,6 @@ contentSections.forEach((section) => {
             scrub: true,
             start: '10% center',
             end: '60% center',
-            markers: true,
         }
     });
     gsap.from(upChildren, {
