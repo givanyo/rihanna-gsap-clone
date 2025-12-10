@@ -6,15 +6,16 @@ gsap.registerPlugin(ScrollTrigger);
 const contentSections = gsap.utils.toArray('.content');
 
 gsap.set('.left', {
-    x: '-100vw'
+    x: '-80vw',
 })
 
 gsap.set('.right', {
-    x: '100vw'
+    x: '80vw',
 })
 contentSections.forEach((section) => {
     const leftChildren = section.querySelectorAll('.left');
     const rightChildren = section.querySelectorAll('.right');
+    const fullImg = section.querySelector('.full-img');
 
     gsap.to(leftChildren, {
         x: 0,
@@ -26,7 +27,7 @@ contentSections.forEach((section) => {
             end: 'top 30%',
 
         }
-    })
+    });
 
     gsap.to(rightChildren, {
         x: 0,
@@ -37,8 +38,18 @@ contentSections.forEach((section) => {
             start: 'top 100%',
             end: 'top 30%'
         }
-    })
-})
+    });
+
+    gsap.to(fullImg, {
+        backgroundPositionY: 100,
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: 'top 80%',
+            end: '+=200%',
+        }
+    });
+});
 
 
 
