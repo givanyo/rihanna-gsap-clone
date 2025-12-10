@@ -51,6 +51,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -59,6 +60,10 @@
     background-position: center;
 }
 
+#bio-006 {
+    background-image: url(../assets/section-bio-photo-006.jpg);
+    background-position: bottom left;
+}
 .text-overlap {
     width: 80%;
     font-size: 32px;

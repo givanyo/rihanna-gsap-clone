@@ -19,11 +19,24 @@
 }
 
 .img-text.split p {
-    font-size: 52px;
     text-align: center;
 }
 
 
+p.larger {
+    font-size: 48px;
+}
+
 .content.smaller {
     height: 75dvh;
+}
+
+.large {
+    font-size: 40px;
+    width: 50%;
+}
+
+.self-align-end {
+    align-self: flex-end;
+    padding-bottom: 20dvh;
 }

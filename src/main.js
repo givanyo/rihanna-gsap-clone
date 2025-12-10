@@ -7,11 +7,11 @@ const contentSections = gsap.utils.toArray('.content');
 
 gsap.set('.left', {
     x: '-80vw',
-})
+});
 
 gsap.set('.right', {
     x: '80vw',
-})
+});
 
 gsap.set('.appear', {
     opacity: 0,
@@ -19,8 +19,8 @@ gsap.set('.appear', {
 
 gsap.set('.text-lg', {
     opacity: 0.9,
-    scale: 0.6,
-})
+    scale: 0.8,
+});
 
 gsap.to('.appear', {
     opacity: 1,
@@ -30,9 +30,14 @@ gsap.to('.appear', {
 contentSections.forEach((section) => {
     const leftChildren = section.querySelectorAll('.left');
     const rightChildren = section.querySelectorAll('.right');
-    const fullImg = section.querySelector('.full-img');
+    const upChildren = section.querySelector('.up');
+    const fullImgPos = section.querySelector('.full-img.position');
+    const fullImgScale = section.querySelector('.full-img.scale');
     const textLg = section.querySelector('.text-lg');
+    gsap.set(fullImgScale, {
+        backgroundSize: '140%',
 
+    });
     gsap.to(leftChildren, {
         x: 0,
         ease: 'power1.inOut',
@@ -56,7 +61,9 @@ contentSections.forEach((section) => {
         }
     });
 
-    gsap.to(fullImg, {
+
+
+    gsap.to(fullImgPos, {
         backgroundPositionY: 100,
         scrollTrigger: {
             trigger: section,
@@ -76,7 +83,29 @@ contentSections.forEach((section) => {
             start: '-20% center',
             end: 'center center',
         }
-    })
+    });
+
+    gsap.to(fullImgScale, {
+        backgroundSize: "100%",
+        ease: 'power3.inOut',
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: '10% center',
+            end: '60% center',
+            markers: true,
+        }
+    });
+    gsap.from(upChildren, {
+        y: "-80dvh",
+        ease: 'power1.inOut',
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: '6% center',
+            end: '60% center'
+        }
+    });
 });
 
 
