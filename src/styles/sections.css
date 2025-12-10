@@ -68,3 +68,11 @@
     color: var(--white);
     text-align: center;
 }
+
+
+.text-lg {
+    font-size: 48px;
+    text-align: center;
+    width: 70%;
+    color: var(--text-color);
+}

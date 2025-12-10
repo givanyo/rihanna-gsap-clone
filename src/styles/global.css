@@ -4,6 +4,7 @@
     --white: hsl(55, 65%, 97%);
     --white-darker: hsl(55, 5%, 60%);
     --text-color: hsl(0, 0%, 36%);
+    --yellow-gradient: linear-gradient(to bottom right, hsl(57, 50%, 94%), hsl(57, 50%, 92%), hsl(57, 50%, 90%));
 }
 * {
     margin: 0;

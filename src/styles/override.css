@@ -3,3 +3,13 @@
     color: var(--white-darker);
     padding-block: 16px;
 }
+
+.yellow-gradient {
+    background-image: var(--yellow-gradient)
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
