@@ -14,9 +14,6 @@
     
 }
 
-.content-md {
-    height: 20dvh;
-}
 .left {
     left: 0;
     margin-left: 4px;
@@ -71,7 +68,7 @@
 
 
 .text-lg {
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
     width: 70%;
     color: var(--text-color);

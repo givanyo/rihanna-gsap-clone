@@ -13,3 +13,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.img-text.split img {
+    width: 50%;
+}
+
+.img-text.split p {
+    font-size: 52px;
+    text-align: center;
+}
+
+
+.content.smaller {
+    height: 75dvh;
+}
