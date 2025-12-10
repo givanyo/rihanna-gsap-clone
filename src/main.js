@@ -22,7 +22,6 @@ contentSections.forEach((section) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            markers: true,
             start: 'top 120%',
             end: 'top 30%',
 
@@ -35,7 +34,6 @@ contentSections.forEach((section) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            markers: true,
             start: 'top 100%',
             end: 'top 30%'
         }
