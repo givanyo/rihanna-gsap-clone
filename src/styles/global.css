@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     min-height: 1000vh;
     overflow-x: hidden;
+    line-height: 1.5;
 }
 
 ul {
