@@ -28,7 +28,9 @@
 p.larger {
     font-size: 48px;
 }
-
+.content.xl {
+    height: 100dvh;
+}
 .content.smaller {
     height: 75dvh;
 }

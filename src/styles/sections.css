@@ -68,6 +68,10 @@
     background-image: url(../assets/Anti-1796x2048.jpg);
     background-position: top;
 }
+
+#concert {
+    background-image:url(../assets/410B7955-small-2048x1365.jpg);
+}
 .text-overlap {
     width: 80%;
     font-size: 32px;

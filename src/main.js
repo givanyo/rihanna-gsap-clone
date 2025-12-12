@@ -96,8 +96,8 @@ contentSections.forEach((section) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            start: '10% center',
-            end: '60% center',
+            start: '-10% center',
+            end: '80% center',
         }
     });
     gsap.from(overlapUp, {
