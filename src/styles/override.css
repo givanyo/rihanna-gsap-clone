@@ -30,7 +30,9 @@ p.larger {
 .content.smaller {
     height: 75dvh;
 }
-
+.content.tiny {
+    height: 57.5dvh;
+}
 .large {
     font-size: 40px;
     width: 50%;
@@ -44,4 +46,13 @@ p.larger {
 
 .text p.align-left  {
     text-align: left;
+}
+
+.split.images img {
+    width: 33%;
+    height: 100%;
+}
+
+.split.images img + img {
+    width: 67%;
 }
