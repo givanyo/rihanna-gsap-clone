@@ -63,6 +63,11 @@
     background-image: url(../assets/section-bio-photo-006.jpg);
     background-position: bottom left;
 }
+
+#anti {
+    background-image: url(../assets/Anti-1796x2048.jpg);
+    background-position: top;
+}
 .text-overlap {
     width: 80%;
     font-size: 32px;
