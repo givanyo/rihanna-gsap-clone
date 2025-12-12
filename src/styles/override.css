@@ -21,7 +21,9 @@
 .img-text.split p {
     text-align: center;
 }
-
+.img-text.split .text {
+    width: 50%;
+}
 
 p.larger {
     font-size: 48px;
@@ -56,3 +58,4 @@ p.larger {
 .split.images img + img {
     width: 67%;
 }
+
