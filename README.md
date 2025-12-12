@@ -1,4 +1,4 @@
-# Dropbox GSAP Clone
+# Rihanna GSAP Clone
 
 Clone da seção Bio do [site oficial da Rihanna](https://rihannanow.com/bio). Meu objetivo é praticar o desenvolvimento de animações ainda mais complexas que as dos projetos anteriores  usando GSAP e ScrollTrigger.
 
