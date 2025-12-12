@@ -37,7 +37,7 @@ contentSections.forEach((section) => {
 
     const fullImgPos = section.querySelector('.full-img.position');
     const fullImgScale = section.querySelector('.full-img.scale');
-    const textLg = section.querySelector('.text-lg');
+    const textLg = section.querySelector('.text-lg.grow');
 
     gsap.set(fullImgScale, {
         backgroundSize: '140%',

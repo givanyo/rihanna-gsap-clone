@@ -61,3 +61,12 @@ p.larger {
     width: 67%;
 }
 
+.text-lg.left {
+    margin: auto;
+    width: 80%;
+}
+
+.text-lg.left p {
+    text-align: left;
+}
+
